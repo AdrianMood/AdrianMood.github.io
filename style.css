@@ -61,7 +61,7 @@ transition: all 0.3s ease;
 }
 .Transparent-box{
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(bilder/Hva-er-en-kosnp.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(/Bilder/Hva-er-en-kosnp.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
