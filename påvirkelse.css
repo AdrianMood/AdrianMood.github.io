@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    background: #1b1b1b;
+    width: 100%;
+    padding: 25px;
+}
+nav .meny{
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.meny .konspirasjonsteori-logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+.meny ul {
+  display: inline-flex;
+}
+.meny ul li {
+   list-style: none;
+   margin-left: 10px;
+}
+.meny ul li a{
+text-decoration: none;
+color: white;
+font-size: 18px;
+font-weight: 500;
+padding: 8px 15px;
+border-radius: 5px;
+transition: all 0.3s ease;
+}
+.meny ul li a:hover{
+    background: white;
+    color: black;
+}
+.bakgrunnsbilde{
+    background: url(bilder/flat-planet.jpg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.beholder {
+    display: grid;
+    grid-template-columns: minmax(0,1) minmax(0,5) minmax(0,1) minmax(0,5) minmax(0,1);
+    grid-template-rows: 100px minmax(0,5) 100px;
+    grid-template-areas:
+    '. tekstboks1 . tekstboks2 .'
+    '. . . . .'
+    ;
+}
+.Transparent-box{
+    height: 100vh;
+    background-image: url(bilder/flat-planet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tekstboks1{
+    margin-left: 105px;
+    margin-top: 80px;
+    grid-area: tekstboks1;
+    max-width: 650px;
+    position:relative;  
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:rgba(255,255,255,.4);
+    box-shadow: 0 15px 20px rgba(0,0,0,.2);
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 2px;  
+    color: white;
+}
+.tekstboks1 .tekstboks2 h1{
+font-size: 45px;
+}
+.tekstboks1 .tekstboks2  p{
+    font-size: 18px;
+}
+.tekstboks2 {
+    margin-right: 100px;
+    margin-top: 160px;
+    grid-area: tekstboks2;
+    max-width: 650px;
+    position:relative;  
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:rgba(255,255,255,.4);
+    box-shadow: 0 15px 20px rgba(0,0,0,.2);
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
